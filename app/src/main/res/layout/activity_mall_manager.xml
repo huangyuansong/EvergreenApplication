@@ -1,0 +1,29 @@
+<android.support.v7.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.pc.evergreen.activitys.UpdateCadresActivity">
+    <include layout="@layout/bar_title"/>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.yanzhenjie.recyclerview.swipe.SwipeMenuRecyclerView
+            android:id="@+id/recycler_goods_mall"
+            android:layout_width="match_parent"
+            android:layout_weight="8"
+            android:layout_height="0dp">
+        </com.yanzhenjie.recyclerview.swipe.SwipeMenuRecyclerView>
+        <Button
+            android:id="@+id/bt_add_goods"
+            android:textSize="18sp"
+            android:background="@drawable/bg_btn_press_selector"
+            android:layout_width="match_parent"
+            android:textColor="@color/color_titel"
+            android:text="添加兑换商品"
+            android:layout_weight="1"
+            android:layout_height="0dp" />
+    </LinearLayout>
+</android.support.v7.widget.LinearLayoutCompat>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activitys.StudyActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+        <include layout="@layout/bar_title"/>
+        <LinearLayout
+            android:orientation="vertical"
+            android:background="@color/light_grey"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/date_study"
+                android:text="今天是2月2日  星期五                 该科目有93人报名"
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:background="@color/color_titel"
+                android:layout_height="30dp" />
+            <ImageView
+                android:id="@+id/study_image"
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:background="@mipmap/details_1"
+                />
+        </LinearLayout>
+    </android.support.design.widget.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/table_layout_study"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:tabSelectedTextColor="@color/color_Theme" />
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewPager_study"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </android.support.v4.view.ViewPager>
+    </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>

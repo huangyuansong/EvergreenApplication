@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <include layout="@layout/bar_title"/>
+
+    <TextView
+        android:id="@+id/tv_exchange_integral"
+        android:textColor="@color/color_Theme"
+        android:text="我当前的积分是："
+        android:paddingLeft="15dp"
+        android:gravity="center_vertical"
+        android:background="@color/color_titel"
+        android:layout_width="match_parent"
+        android:layout_height="30dp" />
+    <android.support.design.widget.CoordinatorLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <com.yanzhenjie.recyclerview.swipe.SwipeMenuRecyclerView
+        android:id="@+id/recycler_goods_exchange"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </com.yanzhenjie.recyclerview.swipe.SwipeMenuRecyclerView>
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab_exchange"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_margin="@dimen/fab_margin"
+            android:src="@mipmap/shopping" />
+    </android.support.design.widget.CoordinatorLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+    </LinearLayout>
+</LinearLayout>

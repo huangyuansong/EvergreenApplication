@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="spingarr_number" >
+        <item>1人</item>
+        <item>2人</item>
+        <item>3人</item>
+        <item>4人</item>
+        <item>5人</item>
+        <item>6人</item>
+        <item>7人</item>
+        <item>8人</item>
+        <item>9人</item>
+        <item>10人以上</item>
+    </string-array>
+    <string-array name="spinner_accompany"  >
+        <item >否</item>
+        <item>是</item>
+    </string-array>
+    <string-array name="spinner_atravel"  >
+        <item >不驾车</item>
+        <item>驾车</item>
+    </string-array>
+    <string-array name="spinner_study_gender"  >
+    <item >女</item>
+    <item>男</item>
+    </string-array>
+    <string-array name="spinner_health"  >
+        <item >健康</item>
+        <item>亚健康</item>
+        <item>不健康</item>
+    </string-array>
+    <string-array name="spinner_level"  >
+        <item >正省部级</item>
+        <item>副省部级</item>
+        <item>正地级</item>
+        <item>副地级</item>
+        <item>正县级</item>
+        <item>副县级</item>
+        <item>正科级</item>
+        <item>副科级</item>
+        <item>其它</item>
+        <item>请选择级别</item>
+    </string-array>
+</resources>
